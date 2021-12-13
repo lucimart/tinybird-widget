@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widget</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="bodyLoadHandler()">
+    <header class="header">
+      <div class="logo">
+        <h1>NYTaxi</h1>
+        <p>in numbers</p>
+      </div>
+      <p class="year-edition">2017</p>
+    </header>
+    <form class="filter-form" name="filterForm" id="filterForm" method="get">
+      <div class="form-date">
+        <label for="form-from">From</label>
+        <input
+          type="date"
+          name="form-from"
+          id="form-from"
+          min="2017-01-01"
+          max="2017-12-31"
+          value="2017-01-01"
+        />
+        <label for="form-to">To</label>
+        <input
+          type="date"
+          name="form-to"
+          id="form-to"
+          min="2017-01-01"
+          max="2017-12-31"
+          value="2017-12-31"
+        />
+      </div>
+      <div class="form-vendor">
+        <div>
+          <input
+            type="radio"
+            id="form-vendor-all"
+            name="formVendor"
+            value="all"
+            checked
+          />
+          <label for="form-vendor-all">All</label>
+        </div>
+
+        <div>
+          <input type="radio" id="form-vendor-1" name="formVendor" value="1" />
+          <label for="form-vendor-1">Ubercab</label>
+        </div>
+
+        <div>
+          <input type="radio" id="form-vendor-2" name="formVendor" value="2" />
+          <label for="form-vendor-2">Cabilicious</label>
+        </div>
+      </div>
+    </form>
+    <div class="flex">
+      <div class="box">
+        <h3>Total earnings</h3>
+        <p id="total-earnings"></p>
+      </div>
+      <div class="box">
+        <h3>Average passengers</h3>
+        <p id="average-passengers"></p>
+      </div>
+      <div class="box">
+        <h3>Average trip time</h3>
+        <p id="average-trip-time"></p>
+      </div>
+      <div class="box">
+        <h3>Average trip distance</h3>
+        <p id="average-trip-distance"></p>
+      </div>
+      <div class="box">
+        <h3>Total trips</h3>
+        <p id="trip-count"></p>
+      </div>
+      <div class="box">
+        <h3>Paid with cash</h3>
+        <p id="paid-cash"></p>
+      </div>
+      <div class="box">
+        <h3>Paid with card</h3>
+        <p id="paid-card"></p>
+      </div>
+      <div class="box">
+        <h3>Average tip</h3>
+        <p id="average-tip"></p>
+        <p id="tip-perc"></p>
+      </div>
+    </div>
+    <script src="https://cdn.tinybird.co/v1/tinybird.js"></script>
+    <script src="logic.js"></script>
+  </body>
+</html>

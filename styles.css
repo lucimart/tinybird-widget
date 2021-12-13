@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  line-height: 100%;
+  font-size: 3rem;
+}
+
+.logo p {
+  line-height: 100%;
+  font-size: 1.875rem;
+}
+
+.year-edition {
+  width: fit-content;
+}
+
+.header {
+  background-color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.filter-form {
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+@media only screen and (min-width: 426px) {
+  .filter-form {
+    flex-direction: row;
+  }
+}
+
+.filter-icon {
+  filter: invert(100%);
+  width: 2rem;
+}
+
+.form-date {
+  align-items: center;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-date label {
+  justify-self: end;
+}
+
+.form-vendor {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 0.5rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .form-vendor {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.form-vendor div {
+  text-align: center;
+}
+
+@media only screen and (min-width: 426px) {
+  .form-vendor div {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  background-color: #fff;
+  box-shadow: 0px 8px 20px rgba(0, 5, 10, 0.08);
+  transition: transform 200ms ease-out;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.h3 {
+  font-weight: 700;
+}
+
+.flex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem;
+}
